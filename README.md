@@ -1,13 +1,13 @@
 # Object Oriented Java Programming: Data Structures and Beyond Specialization
 
-SKILLS YOU WILL GAIN: 
+## SKILLS YOU WILL GAIN: 
 
-Data Structure, 
-Problem Solving, 
-Java Programming, 
-Object-Oriented Programming (OOP) 
+- Data Structure, 
+- Problem Solving, 
+- Java Programming, 
+- Object-Oriented Programming (OOP) 
 
-About this Specialization
+## About this Specialization
 This Specialization covers intermediate topics in software development. 
 You’ll learn object-oriented programming principles that will allow you to use Java to its full potential, and you’ll implement data structures and algorithms for organizing large amounts of data in a way that is both efficient and easy to work with. 
 You’ll also practice critically evaluating your own code, and you’ll build technical communication skills that will help you prepare for job interviews and collaborative work as a software engineer. 

@@ -1,5 +1,4 @@
-# Coursera-Spec-Java--OOP-DataStructures
-Object Oriented Java Programming: Data Structures and Beyond Specialization
+# Object Oriented Java Programming: Data Structures and Beyond Specialization
 
 SKILLS YOU WILL GAIN: 
 Data Structure, 

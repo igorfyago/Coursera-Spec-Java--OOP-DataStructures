@@ -3,13 +3,9 @@
 SKILLS YOU WILL GAIN: 
 
 Data Structure, 
-
 Problem Solving, 
-
 Java Programming, 
-
 Object-Oriented Programming (OOP) 
-
 
 About this Specialization
 This Specialization covers intermediate topics in software development. 

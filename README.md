@@ -1,4 +1,4 @@
-# Object Oriented Java Programming: Data Structures and Beyond Specialization
+# Object Oriented Java Programming: Data Structures and Beyond Specialization (Intermediate level)
 
 ## SKILLS YOU WILL GAIN: 
 

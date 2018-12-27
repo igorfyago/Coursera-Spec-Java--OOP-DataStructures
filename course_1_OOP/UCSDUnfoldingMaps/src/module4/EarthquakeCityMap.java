@@ -13,6 +13,7 @@ import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.marker.MultiMarker;
 import de.fhpotsdam.unfolding.providers.Google;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
+import de.fhpotsdam.unfolding.providers.Microsoft;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 import parsing.ParseFeed;
 import processing.core.PApplet;
@@ -59,6 +60,10 @@ public class EarthquakeCityMap extends PApplet {
 
 	// A List of country markers
 	private List<Marker> countryMarkers;
+
+    static public void main(String args[]) {
+        PApplet.main(new String[] { "module4.EarthquakeCityMap" });
+    }
 	
 	public void setup() {		
 		// (1) Initializing canvas and map tiles
@@ -68,7 +73,7 @@ public class EarthquakeCityMap extends PApplet {
 		    earthquakesURL = "2.5_week.atom";  // The same feed, but saved August 7, 2015
 		}
 		else {
-			map = new UnfoldingMap(this, 200, 50, 650, 600, new Google.GoogleMapProvider());
+			map = new UnfoldingMap(this, 200, 50, 650, 600, new Microsoft.RoadProvider());
 			// IF YOU WANT TO TEST WITH A LOCAL FILE, uncomment the next line
 		    //earthquakesURL = "2.5_week.atom";
 		}
@@ -80,7 +85,7 @@ public class EarthquakeCityMap extends PApplet {
 		//earthquakesURL = "test2.atom";
 		
 		// WHEN TAKING THIS QUIZ: Uncomment the next line
-		//earthquakesURL = "quiz1.atom";
+		earthquakesURL = "quiz1.atom";
 		
 		
 		// (2) Reading in earthquake data and geometric properties
@@ -167,13 +172,12 @@ public class EarthquakeCityMap extends PApplet {
 		// For each, check if the earthquake PointFeature is in the 
 		// country in m.  Notice that isInCountry takes a PointFeature
 		// and a Marker as input.  
-		// If isInCountry ever returns true, isLand should return true.
-		for (Marker m : countryMarkers) {
-			// TODO: Finish this method using the helper method isInCountry
-			
-		}
-		
-		
+			// DONE: Finish this method using the helper method isInCountry
+			for (Marker country : countryMarkers) {
+				if (isInCountry(earthquake, country)) {
+					return true;
+				}
+			}
 		// not inside any country
 		return false;
 	}
@@ -184,34 +188,52 @@ public class EarthquakeCityMap extends PApplet {
 	 * ...
 	 * OCEAN QUAKES: numOceanQuakes
 	 * */
-	private void printQuakes() 
+	private void printQuakes()
 	{
-		// TODO: Implement this method
+		// DONE: Implement this method
 		// One (inefficient but correct) approach is to:
-		//   Loop over all of the countries, e.g. using 
+		//   Loop over all of the countries, e.g. using
 		//        for (Marker cm : countryMarkers) { ... }
-		//        
+		//
 		//      Inside the loop, first initialize a quake counter.
 		//      Then loop through all of the earthquake
 		//      markers and check to see whether (1) that marker is on land
-		//     	and (2) if it is on land, that its country property matches 
+		//     	and (2) if it is on land, that its country property matches
 		//      the name property of the country marker.   If so, increment
 		//      the country's counter.
-		
+
 		// Here is some code you will find useful:
-		// 
+		//
 		//  * To get the name of a country from a country marker in variable cm, use:
 		//     String name = (String)cm.getProperty("name");
 		//  * If you have a reference to a Marker m, but you know the underlying object
 		//    is an EarthquakeMarker, you can cast it:
 		//       EarthquakeMarker em = (EarthquakeMarker)m;
-		//    Then em can access the methods of the EarthquakeMarker class 
+		//    Then em can access the methods of the EarthquakeMarker class
 		//       (e.g. isOnLand)
-		//  * If you know your Marker, m, is a LandQuakeMarker, then it has a "country" 
+		//  * If you know your Marker, m, is a LandQuakeMarker, then it has a "country"
 		//      property set.  You can get the country with:
 		//        String country = (String)m.getProperty("country");
-		
-		
+		int totalWaterQuakes = quakeMarkers.size();
+		for (Marker country : countryMarkers) {
+			String countryName = country.getStringProperty("name");
+			int numQuakes = 0;
+			for (Marker marker : quakeMarkers) {
+				EarthquakeMarker eqMarker = (EarthquakeMarker) marker;
+				if (eqMarker.isOnLand()) {
+					if (countryName.equals(eqMarker.getStringProperty("country"))) {
+						numQuakes++;
+					}
+				}
+			}
+			System.out.println(countryName + ":" + numQuakes);
+
+			if (numQuakes > 0) {
+				totalWaterQuakes -= numQuakes;
+				System.out.println(countryName + ": " + numQuakes);
+			}
+		}
+		System.out.println("OCEAN QUAKES: " + totalWaterQuakes);
 	}
 	
 	

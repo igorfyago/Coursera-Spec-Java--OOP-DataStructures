@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f803fec3-dddf-42e5-8476-0f96adb0fec5" name="Default Changelist" comment="week2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module4/EarthquakeCityMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4/EarthquakeCityMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module4/EarthquakeMarker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4/EarthquakeMarker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module4/LandQuakeMarker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4/LandQuakeMarker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module4/OceanQuakeMarker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4/OceanQuakeMarker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module5/EarthquakeCityMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module5/EarthquakeCityMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module6/EarthquakeCityMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module6/EarthquakeCityMap.java" afterDir="false" />
-    </list>
+    <list default="true" id="f803fec3-dddf-42e5-8476-0f96adb0fec5" name="Default Changelist" comment="week2" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/module4/EarthquakeMarker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
-              <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+              <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -40,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module5/EarthquakeMarker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="2006">
               <caret line="119" column="21" selection-start-line="115" selection-end-line="127" selection-end-column="5" />
             </state>
           </provider>
@@ -87,7 +79,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -197,8 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +217,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,12 +284,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Applet.module1" />
-      <item itemvalue="Applet.MySmiley" />
       <item itemvalue="Applet.EarthquakeCityMap" />
-      <item itemvalue="Application.EarthquakeCityMap" />
+      <item itemvalue="Applet.MySmiley" />
+      <item itemvalue="Applet.module1" />
       <item itemvalue="Application.EarthquakeCityMap (1)" />
       <item itemvalue="Application.EarthquakeCityMap (2)" />
+      <item itemvalue="Application.EarthquakeCityMap" />
     </list>
     <recent_temporary>
       <list>
@@ -339,7 +331,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1885906" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -565,7 +557,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module5/EarthquakeMarker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="2006">
           <caret line="119" column="21" selection-start-line="115" selection-end-line="127" selection-end-column="5" />
         </state>
       </provider>
@@ -573,7 +565,7 @@
     <entry file="file://$PROJECT_DIR$/src/module4/EarthquakeMarker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
-          <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
         </state>
       </provider>
     </entry>

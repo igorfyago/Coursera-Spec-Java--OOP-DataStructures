@@ -2,9 +2,9 @@
 
 ## SKILLS YOU WILL GAIN: 
 
-- Data Structure, 
-- Problem Solving, 
-- Java Programming, 
+- Data Structure
+- Problem Solving 
+- Java Programming 
 - Object-Oriented Programming (OOP) 
 
 ## About this Specialization
